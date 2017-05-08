@@ -1,0 +1,912 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8BBB567C1CC8D70C003F31F4 /* Powder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB567A1CC8D70C003F31F4 /* Powder.cpp */; };
+		8BBB57661CC91C19003F31F4 /* Abstract3x3ConvolutionFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB56C21CC91C19003F31F4 /* Abstract3x3ConvolutionFilter.cpp */; };
+		8BBB57671CC91C19003F31F4 /* Abstract3x3PingPongFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB56C41CC91C19003F31F4 /* Abstract3x3PingPongFilter.cpp */; };
+		8BBB57681CC91C19003F31F4 /* Abstract3x3TextureSamplingFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB56C61CC91C19003F31F4 /* Abstract3x3TextureSamplingFilter.cpp */; };
+		8BBB57691CC91C19003F31F4 /* AbstractDoGFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB56C81CC91C19003F31F4 /* AbstractDoGFilter.cpp */; };
+		8BBB576A1CC91C19003F31F4 /* AbstractFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB56CA1CC91C19003F31F4 /* AbstractFilter.cpp */; };
+		8BBB576B1CC91C19003F31F4 /* AbstractPingPongRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB56CC1CC91C19003F31F4 /* AbstractPingPongRenderer.cpp */; };
+		8BBB576C1CC91C19003F31F4 /* AbstractTwoInputCrossTextureSamplingFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB56CE1CC91C19003F31F4 /* AbstractTwoInputCrossTextureSamplingFilter.cpp */; };
+		8BBB576D1CC91C19003F31F4 /* AbstractTwoInputFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB56D01CC91C19003F31F4 /* AbstractTwoInputFilter.cpp */; };
+		8BBB576E1CC91C19003F31F4 /* AdditiveBlendFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB56D21CC91C19003F31F4 /* AdditiveBlendFilter.cpp */; };
+		8BBB576F1CC91C19003F31F4 /* AlphaBlendFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB56D41CC91C19003F31F4 /* AlphaBlendFilter.cpp */; };
+		8BBB57701CC91C19003F31F4 /* AlphaMaskFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB56D61CC91C19003F31F4 /* AlphaMaskFilter.cpp */; };
+		8BBB57711CC91C19003F31F4 /* AverageColorFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB56D81CC91C19003F31F4 /* AverageColorFilter.cpp */; };
+		8BBB57721CC91C19003F31F4 /* BilateralFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB56DA1CC91C19003F31F4 /* BilateralFilter.cpp */; };
+		8BBB57731CC91C19003F31F4 /* BloomFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB56DC1CC91C19003F31F4 /* BloomFilter.cpp */; };
+		8BBB57741CC91C19003F31F4 /* BoxBlurFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB56DE1CC91C19003F31F4 /* BoxBlurFilter.cpp */; };
+		8BBB57751CC91C19003F31F4 /* BrightnessFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB56E01CC91C19003F31F4 /* BrightnessFilter.cpp */; };
+		8BBB57761CC91C19003F31F4 /* CGAColorspaceFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB56E21CC91C19003F31F4 /* CGAColorspaceFilter.cpp */; };
+		8BBB57771CC91C19003F31F4 /* ChromaKeyBlendFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB56E41CC91C19003F31F4 /* ChromaKeyBlendFilter.cpp */; };
+		8BBB57781CC91C19003F31F4 /* ColorBlendFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB56E61CC91C19003F31F4 /* ColorBlendFilter.cpp */; };
+		8BBB57791CC91C19003F31F4 /* ColorBurnFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB56E81CC91C19003F31F4 /* ColorBurnFilter.cpp */; };
+		8BBB577A1CC91C19003F31F4 /* ColorMatrixFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB56EA1CC91C19003F31F4 /* ColorMatrixFilter.cpp */; };
+		8BBB577B1CC91C19003F31F4 /* ColorPackingFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB56EC1CC91C19003F31F4 /* ColorPackingFilter.cpp */; };
+		8BBB577C1CC91C19003F31F4 /* ColorReplacementFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB56EE1CC91C19003F31F4 /* ColorReplacementFilter.cpp */; };
+		8BBB577D1CC91C19003F31F4 /* ContrastFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB56F01CC91C19003F31F4 /* ContrastFilter.cpp */; };
+		8BBB577E1CC91C19003F31F4 /* CornerDetectionFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB56F21CC91C19003F31F4 /* CornerDetectionFilter.cpp */; };
+		8BBB577F1CC91C19003F31F4 /* CrosshatchFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB56F41CC91C19003F31F4 /* CrosshatchFilter.cpp */; };
+		8BBB57801CC91C19003F31F4 /* DarkenBlendFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB56F61CC91C19003F31F4 /* DarkenBlendFilter.cpp */; };
+		8BBB57811CC91C19003F31F4 /* DilationFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB56F81CC91C19003F31F4 /* DilationFilter.cpp */; };
+		8BBB57821CC91C19003F31F4 /* DirectionalDoGFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB56FA1CC91C19003F31F4 /* DirectionalDoGFilter.cpp */; };
+		8BBB57831CC91C19003F31F4 /* DisplacementFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB56FC1CC91C19003F31F4 /* DisplacementFilter.cpp */; };
+		8BBB57841CC91C19003F31F4 /* DissolveBlendFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB56FE1CC91C19003F31F4 /* DissolveBlendFilter.cpp */; };
+		8BBB57851CC91C19003F31F4 /* DoGFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB57001CC91C19003F31F4 /* DoGFilter.cpp */; };
+		8BBB57861CC91C19003F31F4 /* EdgeTangentFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB57021CC91C19003F31F4 /* EdgeTangentFilter.cpp */; };
+		8BBB57871CC91C19003F31F4 /* EdgeTangentSmoothingFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB57041CC91C19003F31F4 /* EdgeTangentSmoothingFilter.cpp */; };
+		8BBB57881CC91C19003F31F4 /* EmbossFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB57061CC91C19003F31F4 /* EmbossFilter.cpp */; };
+		8BBB57891CC91C19003F31F4 /* ErosionFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB57081CC91C19003F31F4 /* ErosionFilter.cpp */; };
+		8BBB578A1CC91C19003F31F4 /* ExclusionBlendFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB570A1CC91C19003F31F4 /* ExclusionBlendFilter.cpp */; };
+		8BBB578B1CC91C19003F31F4 /* FilterChain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB570C1CC91C19003F31F4 /* FilterChain.cpp */; };
+		8BBB578C1CC91C19003F31F4 /* FlowDoGFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB570E1CC91C19003F31F4 /* FlowDoGFilter.cpp */; };
+		8BBB578D1CC91C19003F31F4 /* GammaFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB57101CC91C19003F31F4 /* GammaFilter.cpp */; };
+		8BBB578E1CC91C19003F31F4 /* GaussianBlurFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB57121CC91C19003F31F4 /* GaussianBlurFilter.cpp */; };
+		8BBB578F1CC91C19003F31F4 /* GradientMapFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB57141CC91C19003F31F4 /* GradientMapFilter.cpp */; };
+		8BBB57901CC91C19003F31F4 /* GrayscaleFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB57161CC91C19003F31F4 /* GrayscaleFilter.cpp */; };
+		8BBB57911CC91C19003F31F4 /* HalftoneFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB57181CC91C19003F31F4 /* HalftoneFilter.cpp */; };
+		8BBB57921CC91C19003F31F4 /* HarrisCornerDetectionFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB571A1CC91C19003F31F4 /* HarrisCornerDetectionFilter.cpp */; };
+		8BBB57931CC91C19003F31F4 /* HueFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB571C1CC91C19003F31F4 /* HueFilter.cpp */; };
+		8BBB57941CC91C19003F31F4 /* InvertFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB571E1CC91C19003F31F4 /* InvertFilter.cpp */; };
+		8BBB57951CC91C19003F31F4 /* KuwaharaFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB57201CC91C19003F31F4 /* KuwaharaFilter.cpp */; };
+		8BBB57961CC91C19003F31F4 /* LaplacianFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB57221CC91C19003F31F4 /* LaplacianFilter.cpp */; };
+		8BBB57971CC91C19003F31F4 /* LookupFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB57241CC91C19003F31F4 /* LookupFilter.cpp */; };
+		8BBB57981CC91C19003F31F4 /* LowPassFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB57261CC91C19003F31F4 /* LowPassFilter.cpp */; };
+		8BBB57991CC91C19003F31F4 /* MotionDetectionFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB57281CC91C19003F31F4 /* MotionDetectionFilter.cpp */; };
+		8BBB579A1CC91C19003F31F4 /* MultiplyBlendFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB572A1CC91C19003F31F4 /* MultiplyBlendFilter.cpp */; };
+		8BBB579B1CC91C19003F31F4 /* NormalBlendFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB572C1CC91C19003F31F4 /* NormalBlendFilter.cpp */; };
+		8BBB579C1CC91C19003F31F4 /* PerlinNoiseFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB572E1CC91C19003F31F4 /* PerlinNoiseFilter.cpp */; };
+		8BBB579D1CC91C19003F31F4 /* PerlinPixellationFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB57301CC91C19003F31F4 /* PerlinPixellationFilter.cpp */; };
+		8BBB579E1CC91C19003F31F4 /* PixelateFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB57321CC91C19003F31F4 /* PixelateFilter.cpp */; };
+		8BBB579F1CC91C19003F31F4 /* PoissonBlendFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB57341CC91C19003F31F4 /* PoissonBlendFilter.cpp */; };
+		8BBB57A01CC91C19003F31F4 /* PosterizeFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB57361CC91C19003F31F4 /* PosterizeFilter.cpp */; };
+		8BBB57A11CC91C19003F31F4 /* SaturationFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB57381CC91C19003F31F4 /* SaturationFilter.cpp */; };
+		8BBB57A21CC91C19003F31F4 /* SketchFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB573A1CC91C19003F31F4 /* SketchFilter.cpp */; };
+		8BBB57A31CC91C19003F31F4 /* SmoothToonFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB573C1CC91C19003F31F4 /* SmoothToonFilter.cpp */; };
+		8BBB57A41CC91C19003F31F4 /* SobelEdgeDetectionFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB573E1CC91C19003F31F4 /* SobelEdgeDetectionFilter.cpp */; };
+		8BBB57A51CC91C19003F31F4 /* ThresholdedNonMaximumSuppressionFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB57401CC91C19003F31F4 /* ThresholdedNonMaximumSuppressionFilter.cpp */; };
+		8BBB57A61CC91C19003F31F4 /* TiltShiftFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB57421CC91C19003F31F4 /* TiltShiftFilter.cpp */; };
+		8BBB57A71CC91C19003F31F4 /* ToonFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB57441CC91C19003F31F4 /* ToonFilter.cpp */; };
+		8BBB57A81CC91C19003F31F4 /* VignetteFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB57461CC91C19003F31F4 /* VignetteFilter.cpp */; };
+		8BBB57A91CC91C19003F31F4 /* VoronoiFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB57481CC91C19003F31F4 /* VoronoiFilter.cpp */; };
+		8BBB57AA1CC91C19003F31F4 /* XYDerivativeFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB574A1CC91C19003F31F4 /* XYDerivativeFilter.cpp */; };
+		8BBB57AB1CC91C19003F31F4 /* ZoomBlurFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB574C1CC91C19003F31F4 /* ZoomBlurFilter.cpp */; };
+		8BBB57AC1CC91C19003F31F4 /* ParametricObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB575B1CC91C19003F31F4 /* ParametricObject.cpp */; };
+		8BBB57C71CC93699003F31F4 /* ofxBaseGui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB57B61CC93699003F31F4 /* ofxBaseGui.cpp */; };
+		8BBB57C81CC93699003F31F4 /* ofxButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB57B81CC93699003F31F4 /* ofxButton.cpp */; };
+		8BBB57C91CC93699003F31F4 /* ofxGuiGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB57BB1CC93699003F31F4 /* ofxGuiGroup.cpp */; };
+		8BBB57CA1CC93699003F31F4 /* ofxLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB57BD1CC93699003F31F4 /* ofxLabel.cpp */; };
+		8BBB57CB1CC93699003F31F4 /* ofxPanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB57BF1CC93699003F31F4 /* ofxPanel.cpp */; };
+		8BBB57CC1CC93699003F31F4 /* ofxSlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB57C11CC93699003F31F4 /* ofxSlider.cpp */; };
+		8BBB57CD1CC93699003F31F4 /* ofxSliderGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB57C31CC93699003F31F4 /* ofxSliderGroup.cpp */; };
+		8BBB57CE1CC93699003F31F4 /* ofxToggle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB57C51CC93699003F31F4 /* ofxToggle.cpp */; };
+		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
+		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
+		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4328147138ABC890047C5CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4B27C1510CBEB8E00536013;
+			remoteInfo = openFrameworks;
+		};
+		E4EEB9AB138B136A00A80321 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E4B27C1410CBEB8E00536013;
+			remoteInfo = openFrameworks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E4C2427710CC5ABF004149E2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8B91F65B1CC7974300EEBBC7 /* shader.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = shader.frag; path = bin/data/shader.frag; sourceTree = SOURCE_ROOT; };
+		8BBB567A1CC8D70C003F31F4 /* Powder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Powder.cpp; sourceTree = "<group>"; };
+		8BBB567B1CC8D70C003F31F4 /* Powder.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Powder.hpp; sourceTree = "<group>"; };
+		8BBB56C21CC91C19003F31F4 /* Abstract3x3ConvolutionFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Abstract3x3ConvolutionFilter.cpp; sourceTree = "<group>"; };
+		8BBB56C31CC91C19003F31F4 /* Abstract3x3ConvolutionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Abstract3x3ConvolutionFilter.h; sourceTree = "<group>"; };
+		8BBB56C41CC91C19003F31F4 /* Abstract3x3PingPongFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Abstract3x3PingPongFilter.cpp; sourceTree = "<group>"; };
+		8BBB56C51CC91C19003F31F4 /* Abstract3x3PingPongFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Abstract3x3PingPongFilter.h; sourceTree = "<group>"; };
+		8BBB56C61CC91C19003F31F4 /* Abstract3x3TextureSamplingFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Abstract3x3TextureSamplingFilter.cpp; sourceTree = "<group>"; };
+		8BBB56C71CC91C19003F31F4 /* Abstract3x3TextureSamplingFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Abstract3x3TextureSamplingFilter.h; sourceTree = "<group>"; };
+		8BBB56C81CC91C19003F31F4 /* AbstractDoGFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AbstractDoGFilter.cpp; sourceTree = "<group>"; };
+		8BBB56C91CC91C19003F31F4 /* AbstractDoGFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractDoGFilter.h; sourceTree = "<group>"; };
+		8BBB56CA1CC91C19003F31F4 /* AbstractFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AbstractFilter.cpp; sourceTree = "<group>"; };
+		8BBB56CB1CC91C19003F31F4 /* AbstractFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractFilter.h; sourceTree = "<group>"; };
+		8BBB56CC1CC91C19003F31F4 /* AbstractPingPongRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AbstractPingPongRenderer.cpp; sourceTree = "<group>"; };
+		8BBB56CD1CC91C19003F31F4 /* AbstractPingPongRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractPingPongRenderer.h; sourceTree = "<group>"; };
+		8BBB56CE1CC91C19003F31F4 /* AbstractTwoInputCrossTextureSamplingFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AbstractTwoInputCrossTextureSamplingFilter.cpp; sourceTree = "<group>"; };
+		8BBB56CF1CC91C19003F31F4 /* AbstractTwoInputCrossTextureSamplingFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractTwoInputCrossTextureSamplingFilter.h; sourceTree = "<group>"; };
+		8BBB56D01CC91C19003F31F4 /* AbstractTwoInputFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AbstractTwoInputFilter.cpp; sourceTree = "<group>"; };
+		8BBB56D11CC91C19003F31F4 /* AbstractTwoInputFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractTwoInputFilter.h; sourceTree = "<group>"; };
+		8BBB56D21CC91C19003F31F4 /* AdditiveBlendFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AdditiveBlendFilter.cpp; sourceTree = "<group>"; };
+		8BBB56D31CC91C19003F31F4 /* AdditiveBlendFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdditiveBlendFilter.h; sourceTree = "<group>"; };
+		8BBB56D41CC91C19003F31F4 /* AlphaBlendFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AlphaBlendFilter.cpp; sourceTree = "<group>"; };
+		8BBB56D51CC91C19003F31F4 /* AlphaBlendFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlphaBlendFilter.h; sourceTree = "<group>"; };
+		8BBB56D61CC91C19003F31F4 /* AlphaMaskFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AlphaMaskFilter.cpp; sourceTree = "<group>"; };
+		8BBB56D71CC91C19003F31F4 /* AlphaMaskFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlphaMaskFilter.h; sourceTree = "<group>"; };
+		8BBB56D81CC91C19003F31F4 /* AverageColorFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AverageColorFilter.cpp; sourceTree = "<group>"; };
+		8BBB56D91CC91C19003F31F4 /* AverageColorFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AverageColorFilter.h; sourceTree = "<group>"; };
+		8BBB56DA1CC91C19003F31F4 /* BilateralFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BilateralFilter.cpp; sourceTree = "<group>"; };
+		8BBB56DB1CC91C19003F31F4 /* BilateralFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BilateralFilter.h; sourceTree = "<group>"; };
+		8BBB56DC1CC91C19003F31F4 /* BloomFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BloomFilter.cpp; sourceTree = "<group>"; };
+		8BBB56DD1CC91C19003F31F4 /* BloomFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BloomFilter.h; sourceTree = "<group>"; };
+		8BBB56DE1CC91C19003F31F4 /* BoxBlurFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BoxBlurFilter.cpp; sourceTree = "<group>"; };
+		8BBB56DF1CC91C19003F31F4 /* BoxBlurFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoxBlurFilter.h; sourceTree = "<group>"; };
+		8BBB56E01CC91C19003F31F4 /* BrightnessFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BrightnessFilter.cpp; sourceTree = "<group>"; };
+		8BBB56E11CC91C19003F31F4 /* BrightnessFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrightnessFilter.h; sourceTree = "<group>"; };
+		8BBB56E21CC91C19003F31F4 /* CGAColorspaceFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CGAColorspaceFilter.cpp; sourceTree = "<group>"; };
+		8BBB56E31CC91C19003F31F4 /* CGAColorspaceFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGAColorspaceFilter.h; sourceTree = "<group>"; };
+		8BBB56E41CC91C19003F31F4 /* ChromaKeyBlendFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ChromaKeyBlendFilter.cpp; sourceTree = "<group>"; };
+		8BBB56E51CC91C19003F31F4 /* ChromaKeyBlendFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChromaKeyBlendFilter.h; sourceTree = "<group>"; };
+		8BBB56E61CC91C19003F31F4 /* ColorBlendFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColorBlendFilter.cpp; sourceTree = "<group>"; };
+		8BBB56E71CC91C19003F31F4 /* ColorBlendFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorBlendFilter.h; sourceTree = "<group>"; };
+		8BBB56E81CC91C19003F31F4 /* ColorBurnFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColorBurnFilter.cpp; sourceTree = "<group>"; };
+		8BBB56E91CC91C19003F31F4 /* ColorBurnFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorBurnFilter.h; sourceTree = "<group>"; };
+		8BBB56EA1CC91C19003F31F4 /* ColorMatrixFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColorMatrixFilter.cpp; sourceTree = "<group>"; };
+		8BBB56EB1CC91C19003F31F4 /* ColorMatrixFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorMatrixFilter.h; sourceTree = "<group>"; };
+		8BBB56EC1CC91C19003F31F4 /* ColorPackingFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColorPackingFilter.cpp; sourceTree = "<group>"; };
+		8BBB56ED1CC91C19003F31F4 /* ColorPackingFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorPackingFilter.h; sourceTree = "<group>"; };
+		8BBB56EE1CC91C19003F31F4 /* ColorReplacementFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColorReplacementFilter.cpp; sourceTree = "<group>"; };
+		8BBB56EF1CC91C19003F31F4 /* ColorReplacementFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorReplacementFilter.h; sourceTree = "<group>"; };
+		8BBB56F01CC91C19003F31F4 /* ContrastFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ContrastFilter.cpp; sourceTree = "<group>"; };
+		8BBB56F11CC91C19003F31F4 /* ContrastFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContrastFilter.h; sourceTree = "<group>"; };
+		8BBB56F21CC91C19003F31F4 /* CornerDetectionFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CornerDetectionFilter.cpp; sourceTree = "<group>"; };
+		8BBB56F31CC91C19003F31F4 /* CornerDetectionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CornerDetectionFilter.h; sourceTree = "<group>"; };
+		8BBB56F41CC91C19003F31F4 /* CrosshatchFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CrosshatchFilter.cpp; sourceTree = "<group>"; };
+		8BBB56F51CC91C19003F31F4 /* CrosshatchFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrosshatchFilter.h; sourceTree = "<group>"; };
+		8BBB56F61CC91C19003F31F4 /* DarkenBlendFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DarkenBlendFilter.cpp; sourceTree = "<group>"; };
+		8BBB56F71CC91C19003F31F4 /* DarkenBlendFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DarkenBlendFilter.h; sourceTree = "<group>"; };
+		8BBB56F81CC91C19003F31F4 /* DilationFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DilationFilter.cpp; sourceTree = "<group>"; };
+		8BBB56F91CC91C19003F31F4 /* DilationFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DilationFilter.h; sourceTree = "<group>"; };
+		8BBB56FA1CC91C19003F31F4 /* DirectionalDoGFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DirectionalDoGFilter.cpp; sourceTree = "<group>"; };
+		8BBB56FB1CC91C19003F31F4 /* DirectionalDoGFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectionalDoGFilter.h; sourceTree = "<group>"; };
+		8BBB56FC1CC91C19003F31F4 /* DisplacementFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DisplacementFilter.cpp; sourceTree = "<group>"; };
+		8BBB56FD1CC91C19003F31F4 /* DisplacementFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplacementFilter.h; sourceTree = "<group>"; };
+		8BBB56FE1CC91C19003F31F4 /* DissolveBlendFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DissolveBlendFilter.cpp; sourceTree = "<group>"; };
+		8BBB56FF1CC91C19003F31F4 /* DissolveBlendFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DissolveBlendFilter.h; sourceTree = "<group>"; };
+		8BBB57001CC91C19003F31F4 /* DoGFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DoGFilter.cpp; sourceTree = "<group>"; };
+		8BBB57011CC91C19003F31F4 /* DoGFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoGFilter.h; sourceTree = "<group>"; };
+		8BBB57021CC91C19003F31F4 /* EdgeTangentFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EdgeTangentFilter.cpp; sourceTree = "<group>"; };
+		8BBB57031CC91C19003F31F4 /* EdgeTangentFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EdgeTangentFilter.h; sourceTree = "<group>"; };
+		8BBB57041CC91C19003F31F4 /* EdgeTangentSmoothingFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EdgeTangentSmoothingFilter.cpp; sourceTree = "<group>"; };
+		8BBB57051CC91C19003F31F4 /* EdgeTangentSmoothingFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EdgeTangentSmoothingFilter.h; sourceTree = "<group>"; };
+		8BBB57061CC91C19003F31F4 /* EmbossFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EmbossFilter.cpp; sourceTree = "<group>"; };
+		8BBB57071CC91C19003F31F4 /* EmbossFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmbossFilter.h; sourceTree = "<group>"; };
+		8BBB57081CC91C19003F31F4 /* ErosionFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ErosionFilter.cpp; sourceTree = "<group>"; };
+		8BBB57091CC91C19003F31F4 /* ErosionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErosionFilter.h; sourceTree = "<group>"; };
+		8BBB570A1CC91C19003F31F4 /* ExclusionBlendFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExclusionBlendFilter.cpp; sourceTree = "<group>"; };
+		8BBB570B1CC91C19003F31F4 /* ExclusionBlendFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExclusionBlendFilter.h; sourceTree = "<group>"; };
+		8BBB570C1CC91C19003F31F4 /* FilterChain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FilterChain.cpp; sourceTree = "<group>"; };
+		8BBB570D1CC91C19003F31F4 /* FilterChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterChain.h; sourceTree = "<group>"; };
+		8BBB570E1CC91C19003F31F4 /* FlowDoGFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FlowDoGFilter.cpp; sourceTree = "<group>"; };
+		8BBB570F1CC91C19003F31F4 /* FlowDoGFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowDoGFilter.h; sourceTree = "<group>"; };
+		8BBB57101CC91C19003F31F4 /* GammaFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GammaFilter.cpp; sourceTree = "<group>"; };
+		8BBB57111CC91C19003F31F4 /* GammaFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GammaFilter.h; sourceTree = "<group>"; };
+		8BBB57121CC91C19003F31F4 /* GaussianBlurFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GaussianBlurFilter.cpp; sourceTree = "<group>"; };
+		8BBB57131CC91C19003F31F4 /* GaussianBlurFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GaussianBlurFilter.h; sourceTree = "<group>"; };
+		8BBB57141CC91C19003F31F4 /* GradientMapFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GradientMapFilter.cpp; sourceTree = "<group>"; };
+		8BBB57151CC91C19003F31F4 /* GradientMapFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientMapFilter.h; sourceTree = "<group>"; };
+		8BBB57161CC91C19003F31F4 /* GrayscaleFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GrayscaleFilter.cpp; sourceTree = "<group>"; };
+		8BBB57171CC91C19003F31F4 /* GrayscaleFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayscaleFilter.h; sourceTree = "<group>"; };
+		8BBB57181CC91C19003F31F4 /* HalftoneFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HalftoneFilter.cpp; sourceTree = "<group>"; };
+		8BBB57191CC91C19003F31F4 /* HalftoneFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HalftoneFilter.h; sourceTree = "<group>"; };
+		8BBB571A1CC91C19003F31F4 /* HarrisCornerDetectionFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HarrisCornerDetectionFilter.cpp; sourceTree = "<group>"; };
+		8BBB571B1CC91C19003F31F4 /* HarrisCornerDetectionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HarrisCornerDetectionFilter.h; sourceTree = "<group>"; };
+		8BBB571C1CC91C19003F31F4 /* HueFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HueFilter.cpp; sourceTree = "<group>"; };
+		8BBB571D1CC91C19003F31F4 /* HueFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HueFilter.h; sourceTree = "<group>"; };
+		8BBB571E1CC91C19003F31F4 /* InvertFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InvertFilter.cpp; sourceTree = "<group>"; };
+		8BBB571F1CC91C19003F31F4 /* InvertFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvertFilter.h; sourceTree = "<group>"; };
+		8BBB57201CC91C19003F31F4 /* KuwaharaFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KuwaharaFilter.cpp; sourceTree = "<group>"; };
+		8BBB57211CC91C19003F31F4 /* KuwaharaFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KuwaharaFilter.h; sourceTree = "<group>"; };
+		8BBB57221CC91C19003F31F4 /* LaplacianFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LaplacianFilter.cpp; sourceTree = "<group>"; };
+		8BBB57231CC91C19003F31F4 /* LaplacianFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaplacianFilter.h; sourceTree = "<group>"; };
+		8BBB57241CC91C19003F31F4 /* LookupFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LookupFilter.cpp; sourceTree = "<group>"; };
+		8BBB57251CC91C19003F31F4 /* LookupFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LookupFilter.h; sourceTree = "<group>"; };
+		8BBB57261CC91C19003F31F4 /* LowPassFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LowPassFilter.cpp; sourceTree = "<group>"; };
+		8BBB57271CC91C19003F31F4 /* LowPassFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LowPassFilter.h; sourceTree = "<group>"; };
+		8BBB57281CC91C19003F31F4 /* MotionDetectionFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MotionDetectionFilter.cpp; sourceTree = "<group>"; };
+		8BBB57291CC91C19003F31F4 /* MotionDetectionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionDetectionFilter.h; sourceTree = "<group>"; };
+		8BBB572A1CC91C19003F31F4 /* MultiplyBlendFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MultiplyBlendFilter.cpp; sourceTree = "<group>"; };
+		8BBB572B1CC91C19003F31F4 /* MultiplyBlendFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiplyBlendFilter.h; sourceTree = "<group>"; };
+		8BBB572C1CC91C19003F31F4 /* NormalBlendFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NormalBlendFilter.cpp; sourceTree = "<group>"; };
+		8BBB572D1CC91C19003F31F4 /* NormalBlendFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalBlendFilter.h; sourceTree = "<group>"; };
+		8BBB572E1CC91C19003F31F4 /* PerlinNoiseFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PerlinNoiseFilter.cpp; sourceTree = "<group>"; };
+		8BBB572F1CC91C19003F31F4 /* PerlinNoiseFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerlinNoiseFilter.h; sourceTree = "<group>"; };
+		8BBB57301CC91C19003F31F4 /* PerlinPixellationFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PerlinPixellationFilter.cpp; sourceTree = "<group>"; };
+		8BBB57311CC91C19003F31F4 /* PerlinPixellationFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerlinPixellationFilter.h; sourceTree = "<group>"; };
+		8BBB57321CC91C19003F31F4 /* PixelateFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PixelateFilter.cpp; sourceTree = "<group>"; };
+		8BBB57331CC91C19003F31F4 /* PixelateFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PixelateFilter.h; sourceTree = "<group>"; };
+		8BBB57341CC91C19003F31F4 /* PoissonBlendFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PoissonBlendFilter.cpp; sourceTree = "<group>"; };
+		8BBB57351CC91C19003F31F4 /* PoissonBlendFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoissonBlendFilter.h; sourceTree = "<group>"; };
+		8BBB57361CC91C19003F31F4 /* PosterizeFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PosterizeFilter.cpp; sourceTree = "<group>"; };
+		8BBB57371CC91C19003F31F4 /* PosterizeFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PosterizeFilter.h; sourceTree = "<group>"; };
+		8BBB57381CC91C19003F31F4 /* SaturationFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SaturationFilter.cpp; sourceTree = "<group>"; };
+		8BBB57391CC91C19003F31F4 /* SaturationFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaturationFilter.h; sourceTree = "<group>"; };
+		8BBB573A1CC91C19003F31F4 /* SketchFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SketchFilter.cpp; sourceTree = "<group>"; };
+		8BBB573B1CC91C19003F31F4 /* SketchFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SketchFilter.h; sourceTree = "<group>"; };
+		8BBB573C1CC91C19003F31F4 /* SmoothToonFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SmoothToonFilter.cpp; sourceTree = "<group>"; };
+		8BBB573D1CC91C19003F31F4 /* SmoothToonFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmoothToonFilter.h; sourceTree = "<group>"; };
+		8BBB573E1CC91C19003F31F4 /* SobelEdgeDetectionFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SobelEdgeDetectionFilter.cpp; sourceTree = "<group>"; };
+		8BBB573F1CC91C19003F31F4 /* SobelEdgeDetectionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SobelEdgeDetectionFilter.h; sourceTree = "<group>"; };
+		8BBB57401CC91C19003F31F4 /* ThresholdedNonMaximumSuppressionFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ThresholdedNonMaximumSuppressionFilter.cpp; sourceTree = "<group>"; };
+		8BBB57411CC91C19003F31F4 /* ThresholdedNonMaximumSuppressionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThresholdedNonMaximumSuppressionFilter.h; sourceTree = "<group>"; };
+		8BBB57421CC91C19003F31F4 /* TiltShiftFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TiltShiftFilter.cpp; sourceTree = "<group>"; };
+		8BBB57431CC91C19003F31F4 /* TiltShiftFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiltShiftFilter.h; sourceTree = "<group>"; };
+		8BBB57441CC91C19003F31F4 /* ToonFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ToonFilter.cpp; sourceTree = "<group>"; };
+		8BBB57451CC91C19003F31F4 /* ToonFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToonFilter.h; sourceTree = "<group>"; };
+		8BBB57461CC91C19003F31F4 /* VignetteFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VignetteFilter.cpp; sourceTree = "<group>"; };
+		8BBB57471CC91C19003F31F4 /* VignetteFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VignetteFilter.h; sourceTree = "<group>"; };
+		8BBB57481CC91C19003F31F4 /* VoronoiFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VoronoiFilter.cpp; sourceTree = "<group>"; };
+		8BBB57491CC91C19003F31F4 /* VoronoiFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoronoiFilter.h; sourceTree = "<group>"; };
+		8BBB574A1CC91C19003F31F4 /* XYDerivativeFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XYDerivativeFilter.cpp; sourceTree = "<group>"; };
+		8BBB574B1CC91C19003F31F4 /* XYDerivativeFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYDerivativeFilter.h; sourceTree = "<group>"; };
+		8BBB574C1CC91C19003F31F4 /* ZoomBlurFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZoomBlurFilter.cpp; sourceTree = "<group>"; };
+		8BBB574D1CC91C19003F31F4 /* ZoomBlurFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZoomBlurFilter.h; sourceTree = "<group>"; };
+		8BBB574E1CC91C19003F31F4 /* ofxFilterLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxFilterLibrary.h; sourceTree = "<group>"; };
+		8BBB57501CC91C19003F31F4 /* AbstractParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractParameter.h; sourceTree = "<group>"; };
+		8BBB57511CC91C19003F31F4 /* Parameter2f.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parameter2f.h; sourceTree = "<group>"; };
+		8BBB57521CC91C19003F31F4 /* Parameter2fv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parameter2fv.h; sourceTree = "<group>"; };
+		8BBB57531CC91C19003F31F4 /* Parameter3f.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parameter3f.h; sourceTree = "<group>"; };
+		8BBB57541CC91C19003F31F4 /* Parameter3fv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parameter3fv.h; sourceTree = "<group>"; };
+		8BBB57551CC91C19003F31F4 /* Parameter4f.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parameter4f.h; sourceTree = "<group>"; };
+		8BBB57561CC91C19003F31F4 /* ParameterF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParameterF.h; sourceTree = "<group>"; };
+		8BBB57571CC91C19003F31F4 /* ParameterI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParameterI.h; sourceTree = "<group>"; };
+		8BBB57581CC91C19003F31F4 /* ParameterMatrix4f.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParameterMatrix4f.h; sourceTree = "<group>"; };
+		8BBB57591CC91C19003F31F4 /* ParameterT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParameterT.h; sourceTree = "<group>"; };
+		8BBB575A1CC91C19003F31F4 /* ParameterV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParameterV.h; sourceTree = "<group>"; };
+		8BBB575B1CC91C19003F31F4 /* ParametricObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParametricObject.cpp; sourceTree = "<group>"; };
+		8BBB575C1CC91C19003F31F4 /* ParametricObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParametricObject.h; sourceTree = "<group>"; };
+		8BBB57B61CC93699003F31F4 /* ofxBaseGui.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxBaseGui.cpp; sourceTree = "<group>"; };
+		8BBB57B71CC93699003F31F4 /* ofxBaseGui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxBaseGui.h; sourceTree = "<group>"; };
+		8BBB57B81CC93699003F31F4 /* ofxButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxButton.cpp; sourceTree = "<group>"; };
+		8BBB57B91CC93699003F31F4 /* ofxButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxButton.h; sourceTree = "<group>"; };
+		8BBB57BA1CC93699003F31F4 /* ofxGui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxGui.h; sourceTree = "<group>"; };
+		8BBB57BB1CC93699003F31F4 /* ofxGuiGroup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxGuiGroup.cpp; sourceTree = "<group>"; };
+		8BBB57BC1CC93699003F31F4 /* ofxGuiGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxGuiGroup.h; sourceTree = "<group>"; };
+		8BBB57BD1CC93699003F31F4 /* ofxLabel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxLabel.cpp; sourceTree = "<group>"; };
+		8BBB57BE1CC93699003F31F4 /* ofxLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxLabel.h; sourceTree = "<group>"; };
+		8BBB57BF1CC93699003F31F4 /* ofxPanel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxPanel.cpp; sourceTree = "<group>"; };
+		8BBB57C01CC93699003F31F4 /* ofxPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxPanel.h; sourceTree = "<group>"; };
+		8BBB57C11CC93699003F31F4 /* ofxSlider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSlider.cpp; sourceTree = "<group>"; };
+		8BBB57C21CC93699003F31F4 /* ofxSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSlider.h; sourceTree = "<group>"; };
+		8BBB57C31CC93699003F31F4 /* ofxSliderGroup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSliderGroup.cpp; sourceTree = "<group>"; };
+		8BBB57C41CC93699003F31F4 /* ofxSliderGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSliderGroup.h; sourceTree = "<group>"; };
+		8BBB57C51CC93699003F31F4 /* ofxToggle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxToggle.cpp; sourceTree = "<group>"; };
+		8BBB57C61CC93699003F31F4 /* ofxToggle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxToggle.h; sourceTree = "<group>"; };
+		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
+		E4B69B5B0A3A1756003C02F2 /* TemplateDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TemplateDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofApp.h; path = src/ofApp.h; sourceTree = SOURCE_ROOT; };
+		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
+		E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = CoreOF.xcconfig; path = ../../../libs/openFrameworksCompiled/project/osx/CoreOF.xcconfig; sourceTree = SOURCE_ROOT; };
+		E4EB6923138AFD0F00A09F29 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4B69B590A3A1756003C02F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6948EE371B920CB800B5AC1A /* local_addons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = local_addons;
+			sourceTree = "<group>";
+		};
+		8BBB56831CC91C19003F31F4 /* ofxFilterLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				8BBB56C01CC91C19003F31F4 /* src */,
+			);
+			name = ofxFilterLibrary;
+			path = ../../../addons/ofxFilterLibrary;
+			sourceTree = "<group>";
+		};
+		8BBB56C01CC91C19003F31F4 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				8BBB56C11CC91C19003F31F4 /* filters */,
+				8BBB574E1CC91C19003F31F4 /* ofxFilterLibrary.h */,
+				8BBB574F1CC91C19003F31F4 /* parameters */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		8BBB56C11CC91C19003F31F4 /* filters */ = {
+			isa = PBXGroup;
+			children = (
+				8BBB56C21CC91C19003F31F4 /* Abstract3x3ConvolutionFilter.cpp */,
+				8BBB56C31CC91C19003F31F4 /* Abstract3x3ConvolutionFilter.h */,
+				8BBB56C41CC91C19003F31F4 /* Abstract3x3PingPongFilter.cpp */,
+				8BBB56C51CC91C19003F31F4 /* Abstract3x3PingPongFilter.h */,
+				8BBB56C61CC91C19003F31F4 /* Abstract3x3TextureSamplingFilter.cpp */,
+				8BBB56C71CC91C19003F31F4 /* Abstract3x3TextureSamplingFilter.h */,
+				8BBB56C81CC91C19003F31F4 /* AbstractDoGFilter.cpp */,
+				8BBB56C91CC91C19003F31F4 /* AbstractDoGFilter.h */,
+				8BBB56CA1CC91C19003F31F4 /* AbstractFilter.cpp */,
+				8BBB56CB1CC91C19003F31F4 /* AbstractFilter.h */,
+				8BBB56CC1CC91C19003F31F4 /* AbstractPingPongRenderer.cpp */,
+				8BBB56CD1CC91C19003F31F4 /* AbstractPingPongRenderer.h */,
+				8BBB56CE1CC91C19003F31F4 /* AbstractTwoInputCrossTextureSamplingFilter.cpp */,
+				8BBB56CF1CC91C19003F31F4 /* AbstractTwoInputCrossTextureSamplingFilter.h */,
+				8BBB56D01CC91C19003F31F4 /* AbstractTwoInputFilter.cpp */,
+				8BBB56D11CC91C19003F31F4 /* AbstractTwoInputFilter.h */,
+				8BBB56D21CC91C19003F31F4 /* AdditiveBlendFilter.cpp */,
+				8BBB56D31CC91C19003F31F4 /* AdditiveBlendFilter.h */,
+				8BBB56D41CC91C19003F31F4 /* AlphaBlendFilter.cpp */,
+				8BBB56D51CC91C19003F31F4 /* AlphaBlendFilter.h */,
+				8BBB56D61CC91C19003F31F4 /* AlphaMaskFilter.cpp */,
+				8BBB56D71CC91C19003F31F4 /* AlphaMaskFilter.h */,
+				8BBB56D81CC91C19003F31F4 /* AverageColorFilter.cpp */,
+				8BBB56D91CC91C19003F31F4 /* AverageColorFilter.h */,
+				8BBB56DA1CC91C19003F31F4 /* BilateralFilter.cpp */,
+				8BBB56DB1CC91C19003F31F4 /* BilateralFilter.h */,
+				8BBB56DC1CC91C19003F31F4 /* BloomFilter.cpp */,
+				8BBB56DD1CC91C19003F31F4 /* BloomFilter.h */,
+				8BBB56DE1CC91C19003F31F4 /* BoxBlurFilter.cpp */,
+				8BBB56DF1CC91C19003F31F4 /* BoxBlurFilter.h */,
+				8BBB56E01CC91C19003F31F4 /* BrightnessFilter.cpp */,
+				8BBB56E11CC91C19003F31F4 /* BrightnessFilter.h */,
+				8BBB56E21CC91C19003F31F4 /* CGAColorspaceFilter.cpp */,
+				8BBB56E31CC91C19003F31F4 /* CGAColorspaceFilter.h */,
+				8BBB56E41CC91C19003F31F4 /* ChromaKeyBlendFilter.cpp */,
+				8BBB56E51CC91C19003F31F4 /* ChromaKeyBlendFilter.h */,
+				8BBB56E61CC91C19003F31F4 /* ColorBlendFilter.cpp */,
+				8BBB56E71CC91C19003F31F4 /* ColorBlendFilter.h */,
+				8BBB56E81CC91C19003F31F4 /* ColorBurnFilter.cpp */,
+				8BBB56E91CC91C19003F31F4 /* ColorBurnFilter.h */,
+				8BBB56EA1CC91C19003F31F4 /* ColorMatrixFilter.cpp */,
+				8BBB56EB1CC91C19003F31F4 /* ColorMatrixFilter.h */,
+				8BBB56EC1CC91C19003F31F4 /* ColorPackingFilter.cpp */,
+				8BBB56ED1CC91C19003F31F4 /* ColorPackingFilter.h */,
+				8BBB56EE1CC91C19003F31F4 /* ColorReplacementFilter.cpp */,
+				8BBB56EF1CC91C19003F31F4 /* ColorReplacementFilter.h */,
+				8BBB56F01CC91C19003F31F4 /* ContrastFilter.cpp */,
+				8BBB56F11CC91C19003F31F4 /* ContrastFilter.h */,
+				8BBB56F21CC91C19003F31F4 /* CornerDetectionFilter.cpp */,
+				8BBB56F31CC91C19003F31F4 /* CornerDetectionFilter.h */,
+				8BBB56F41CC91C19003F31F4 /* CrosshatchFilter.cpp */,
+				8BBB56F51CC91C19003F31F4 /* CrosshatchFilter.h */,
+				8BBB56F61CC91C19003F31F4 /* DarkenBlendFilter.cpp */,
+				8BBB56F71CC91C19003F31F4 /* DarkenBlendFilter.h */,
+				8BBB56F81CC91C19003F31F4 /* DilationFilter.cpp */,
+				8BBB56F91CC91C19003F31F4 /* DilationFilter.h */,
+				8BBB56FA1CC91C19003F31F4 /* DirectionalDoGFilter.cpp */,
+				8BBB56FB1CC91C19003F31F4 /* DirectionalDoGFilter.h */,
+				8BBB56FC1CC91C19003F31F4 /* DisplacementFilter.cpp */,
+				8BBB56FD1CC91C19003F31F4 /* DisplacementFilter.h */,
+				8BBB56FE1CC91C19003F31F4 /* DissolveBlendFilter.cpp */,
+				8BBB56FF1CC91C19003F31F4 /* DissolveBlendFilter.h */,
+				8BBB57001CC91C19003F31F4 /* DoGFilter.cpp */,
+				8BBB57011CC91C19003F31F4 /* DoGFilter.h */,
+				8BBB57021CC91C19003F31F4 /* EdgeTangentFilter.cpp */,
+				8BBB57031CC91C19003F31F4 /* EdgeTangentFilter.h */,
+				8BBB57041CC91C19003F31F4 /* EdgeTangentSmoothingFilter.cpp */,
+				8BBB57051CC91C19003F31F4 /* EdgeTangentSmoothingFilter.h */,
+				8BBB57061CC91C19003F31F4 /* EmbossFilter.cpp */,
+				8BBB57071CC91C19003F31F4 /* EmbossFilter.h */,
+				8BBB57081CC91C19003F31F4 /* ErosionFilter.cpp */,
+				8BBB57091CC91C19003F31F4 /* ErosionFilter.h */,
+				8BBB570A1CC91C19003F31F4 /* ExclusionBlendFilter.cpp */,
+				8BBB570B1CC91C19003F31F4 /* ExclusionBlendFilter.h */,
+				8BBB570C1CC91C19003F31F4 /* FilterChain.cpp */,
+				8BBB570D1CC91C19003F31F4 /* FilterChain.h */,
+				8BBB570E1CC91C19003F31F4 /* FlowDoGFilter.cpp */,
+				8BBB570F1CC91C19003F31F4 /* FlowDoGFilter.h */,
+				8BBB57101CC91C19003F31F4 /* GammaFilter.cpp */,
+				8BBB57111CC91C19003F31F4 /* GammaFilter.h */,
+				8BBB57121CC91C19003F31F4 /* GaussianBlurFilter.cpp */,
+				8BBB57131CC91C19003F31F4 /* GaussianBlurFilter.h */,
+				8BBB57141CC91C19003F31F4 /* GradientMapFilter.cpp */,
+				8BBB57151CC91C19003F31F4 /* GradientMapFilter.h */,
+				8BBB57161CC91C19003F31F4 /* GrayscaleFilter.cpp */,
+				8BBB57171CC91C19003F31F4 /* GrayscaleFilter.h */,
+				8BBB57181CC91C19003F31F4 /* HalftoneFilter.cpp */,
+				8BBB57191CC91C19003F31F4 /* HalftoneFilter.h */,
+				8BBB571A1CC91C19003F31F4 /* HarrisCornerDetectionFilter.cpp */,
+				8BBB571B1CC91C19003F31F4 /* HarrisCornerDetectionFilter.h */,
+				8BBB571C1CC91C19003F31F4 /* HueFilter.cpp */,
+				8BBB571D1CC91C19003F31F4 /* HueFilter.h */,
+				8BBB571E1CC91C19003F31F4 /* InvertFilter.cpp */,
+				8BBB571F1CC91C19003F31F4 /* InvertFilter.h */,
+				8BBB57201CC91C19003F31F4 /* KuwaharaFilter.cpp */,
+				8BBB57211CC91C19003F31F4 /* KuwaharaFilter.h */,
+				8BBB57221CC91C19003F31F4 /* LaplacianFilter.cpp */,
+				8BBB57231CC91C19003F31F4 /* LaplacianFilter.h */,
+				8BBB57241CC91C19003F31F4 /* LookupFilter.cpp */,
+				8BBB57251CC91C19003F31F4 /* LookupFilter.h */,
+				8BBB57261CC91C19003F31F4 /* LowPassFilter.cpp */,
+				8BBB57271CC91C19003F31F4 /* LowPassFilter.h */,
+				8BBB57281CC91C19003F31F4 /* MotionDetectionFilter.cpp */,
+				8BBB57291CC91C19003F31F4 /* MotionDetectionFilter.h */,
+				8BBB572A1CC91C19003F31F4 /* MultiplyBlendFilter.cpp */,
+				8BBB572B1CC91C19003F31F4 /* MultiplyBlendFilter.h */,
+				8BBB572C1CC91C19003F31F4 /* NormalBlendFilter.cpp */,
+				8BBB572D1CC91C19003F31F4 /* NormalBlendFilter.h */,
+				8BBB572E1CC91C19003F31F4 /* PerlinNoiseFilter.cpp */,
+				8BBB572F1CC91C19003F31F4 /* PerlinNoiseFilter.h */,
+				8BBB57301CC91C19003F31F4 /* PerlinPixellationFilter.cpp */,
+				8BBB57311CC91C19003F31F4 /* PerlinPixellationFilter.h */,
+				8BBB57321CC91C19003F31F4 /* PixelateFilter.cpp */,
+				8BBB57331CC91C19003F31F4 /* PixelateFilter.h */,
+				8BBB57341CC91C19003F31F4 /* PoissonBlendFilter.cpp */,
+				8BBB57351CC91C19003F31F4 /* PoissonBlendFilter.h */,
+				8BBB57361CC91C19003F31F4 /* PosterizeFilter.cpp */,
+				8BBB57371CC91C19003F31F4 /* PosterizeFilter.h */,
+				8BBB57381CC91C19003F31F4 /* SaturationFilter.cpp */,
+				8BBB57391CC91C19003F31F4 /* SaturationFilter.h */,
+				8BBB573A1CC91C19003F31F4 /* SketchFilter.cpp */,
+				8BBB573B1CC91C19003F31F4 /* SketchFilter.h */,
+				8BBB573C1CC91C19003F31F4 /* SmoothToonFilter.cpp */,
+				8BBB573D1CC91C19003F31F4 /* SmoothToonFilter.h */,
+				8BBB573E1CC91C19003F31F4 /* SobelEdgeDetectionFilter.cpp */,
+				8BBB573F1CC91C19003F31F4 /* SobelEdgeDetectionFilter.h */,
+				8BBB57401CC91C19003F31F4 /* ThresholdedNonMaximumSuppressionFilter.cpp */,
+				8BBB57411CC91C19003F31F4 /* ThresholdedNonMaximumSuppressionFilter.h */,
+				8BBB57421CC91C19003F31F4 /* TiltShiftFilter.cpp */,
+				8BBB57431CC91C19003F31F4 /* TiltShiftFilter.h */,
+				8BBB57441CC91C19003F31F4 /* ToonFilter.cpp */,
+				8BBB57451CC91C19003F31F4 /* ToonFilter.h */,
+				8BBB57461CC91C19003F31F4 /* VignetteFilter.cpp */,
+				8BBB57471CC91C19003F31F4 /* VignetteFilter.h */,
+				8BBB57481CC91C19003F31F4 /* VoronoiFilter.cpp */,
+				8BBB57491CC91C19003F31F4 /* VoronoiFilter.h */,
+				8BBB574A1CC91C19003F31F4 /* XYDerivativeFilter.cpp */,
+				8BBB574B1CC91C19003F31F4 /* XYDerivativeFilter.h */,
+				8BBB574C1CC91C19003F31F4 /* ZoomBlurFilter.cpp */,
+				8BBB574D1CC91C19003F31F4 /* ZoomBlurFilter.h */,
+			);
+			path = filters;
+			sourceTree = "<group>";
+		};
+		8BBB574F1CC91C19003F31F4 /* parameters */ = {
+			isa = PBXGroup;
+			children = (
+				8BBB57501CC91C19003F31F4 /* AbstractParameter.h */,
+				8BBB57511CC91C19003F31F4 /* Parameter2f.h */,
+				8BBB57521CC91C19003F31F4 /* Parameter2fv.h */,
+				8BBB57531CC91C19003F31F4 /* Parameter3f.h */,
+				8BBB57541CC91C19003F31F4 /* Parameter3fv.h */,
+				8BBB57551CC91C19003F31F4 /* Parameter4f.h */,
+				8BBB57561CC91C19003F31F4 /* ParameterF.h */,
+				8BBB57571CC91C19003F31F4 /* ParameterI.h */,
+				8BBB57581CC91C19003F31F4 /* ParameterMatrix4f.h */,
+				8BBB57591CC91C19003F31F4 /* ParameterT.h */,
+				8BBB575A1CC91C19003F31F4 /* ParameterV.h */,
+				8BBB575B1CC91C19003F31F4 /* ParametricObject.cpp */,
+				8BBB575C1CC91C19003F31F4 /* ParametricObject.h */,
+			);
+			path = parameters;
+			sourceTree = "<group>";
+		};
+		8BBB57B41CC93699003F31F4 /* ofxGui */ = {
+			isa = PBXGroup;
+			children = (
+				8BBB57B51CC93699003F31F4 /* src */,
+			);
+			name = ofxGui;
+			path = ../../../addons/ofxGui;
+			sourceTree = "<group>";
+		};
+		8BBB57B51CC93699003F31F4 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				8BBB57B61CC93699003F31F4 /* ofxBaseGui.cpp */,
+				8BBB57B71CC93699003F31F4 /* ofxBaseGui.h */,
+				8BBB57B81CC93699003F31F4 /* ofxButton.cpp */,
+				8BBB57B91CC93699003F31F4 /* ofxButton.h */,
+				8BBB57BA1CC93699003F31F4 /* ofxGui.h */,
+				8BBB57BB1CC93699003F31F4 /* ofxGuiGroup.cpp */,
+				8BBB57BC1CC93699003F31F4 /* ofxGuiGroup.h */,
+				8BBB57BD1CC93699003F31F4 /* ofxLabel.cpp */,
+				8BBB57BE1CC93699003F31F4 /* ofxLabel.h */,
+				8BBB57BF1CC93699003F31F4 /* ofxPanel.cpp */,
+				8BBB57C01CC93699003F31F4 /* ofxPanel.h */,
+				8BBB57C11CC93699003F31F4 /* ofxSlider.cpp */,
+				8BBB57C21CC93699003F31F4 /* ofxSlider.h */,
+				8BBB57C31CC93699003F31F4 /* ofxSliderGroup.cpp */,
+				8BBB57C41CC93699003F31F4 /* ofxSliderGroup.h */,
+				8BBB57C51CC93699003F31F4 /* ofxToggle.cpp */,
+				8BBB57C61CC93699003F31F4 /* ofxToggle.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		BB4B014C10F69532006C3DED /* addons */ = {
+			isa = PBXGroup;
+			children = (
+				8BBB57B41CC93699003F31F4 /* ofxGui */,
+				8BBB56831CC91C19003F31F4 /* ofxFilterLibrary */,
+			);
+			name = addons;
+			sourceTree = "<group>";
+		};
+		E4328144138ABC890047C5CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4328148138ABC890047C5CB /* openFrameworksDebug.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4B69B4A0A3A1720003C02F2 = {
+			isa = PBXGroup;
+			children = (
+				E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */,
+				E4EB6923138AFD0F00A09F29 /* Project.xcconfig */,
+				E4B69E1C0A3A1BDC003C02F2 /* src */,
+				E4EEC9E9138DF44700A80321 /* openFrameworks */,
+				BB4B014C10F69532006C3DED /* addons */,
+				6948EE371B920CB800B5AC1A /* local_addons */,
+				E4B69B5B0A3A1756003C02F2 /* TemplateDebug.app */,
+			);
+			sourceTree = "<group>";
+		};
+		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
+				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
+				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
+				8BBB567A1CC8D70C003F31F4 /* Powder.cpp */,
+				8BBB567B1CC8D70C003F31F4 /* Powder.hpp */,
+				8B91F65B1CC7974300EEBBC7 /* shader.frag */,
+			);
+			path = src;
+			sourceTree = SOURCE_ROOT;
+		};
+		E4EEC9E9138DF44700A80321 /* openFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */,
+				E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */,
+			);
+			name = openFrameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4B69B5A0A3A1756003C02F2 /* Template */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "Template" */;
+			buildPhases = (
+				E4B69B580A3A1756003C02F2 /* Sources */,
+				E4B69B590A3A1756003C02F2 /* Frameworks */,
+				E4B6FFFD0C3F9AB9008CF71C /* ShellScript */,
+				E4C2427710CC5ABF004149E2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4EEB9AC138B136A00A80321 /* PBXTargetDependency */,
+			);
+			name = Template;
+			productName = myOFApp;
+			productReference = E4B69B5B0A3A1756003C02F2 /* TemplateDebug.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4B69B4C0A3A1720003C02F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+			};
+			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "Template" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = E4B69B4A0A3A1720003C02F2;
+			productRefGroup = E4B69B4A0A3A1720003C02F2;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E4328144138ABC890047C5CB /* Products */;
+					ProjectRef = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				E4B69B5A0A3A1756003C02F2 /* Template */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E4328148138ABC890047C5CB /* openFrameworksDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = openFrameworksDebug.a;
+			remoteRef = E4328147138ABC890047C5CB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E4B6FFFD0C3F9AB9008CF71C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mkdir -p \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\n# Copy default icon file into App/Resources\nrsync -aved \"$ICON_FILE\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\n# Copy libfmod and change install directory for fmod to run\nrsync -aved ../../../libs/fmodex/lib/osx/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/\";\ninstall_name_tool -change @executable_path/libfmodex.dylib @executable_path/../Frameworks/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\";\n# Copy GLUT framework (must remove for AppStore submissions)\nrsync -aved ../../../libs/glut/lib/osx/GLUT.framework \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4B69B580A3A1756003C02F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BBB57791CC91C19003F31F4 /* ColorBurnFilter.cpp in Sources */,
+				8BBB576B1CC91C19003F31F4 /* AbstractPingPongRenderer.cpp in Sources */,
+				8BBB57831CC91C19003F31F4 /* DisplacementFilter.cpp in Sources */,
+				8BBB57881CC91C19003F31F4 /* EmbossFilter.cpp in Sources */,
+				8BBB57841CC91C19003F31F4 /* DissolveBlendFilter.cpp in Sources */,
+				8BBB57991CC91C19003F31F4 /* MotionDetectionFilter.cpp in Sources */,
+				8BBB578D1CC91C19003F31F4 /* GammaFilter.cpp in Sources */,
+				8BBB57A71CC91C19003F31F4 /* ToonFilter.cpp in Sources */,
+				8BBB57931CC91C19003F31F4 /* HueFilter.cpp in Sources */,
+				8BBB57A81CC91C19003F31F4 /* VignetteFilter.cpp in Sources */,
+				8BBB57A61CC91C19003F31F4 /* TiltShiftFilter.cpp in Sources */,
+				8BBB57661CC91C19003F31F4 /* Abstract3x3ConvolutionFilter.cpp in Sources */,
+				8BBB578A1CC91C19003F31F4 /* ExclusionBlendFilter.cpp in Sources */,
+				8BBB567C1CC8D70C003F31F4 /* Powder.cpp in Sources */,
+				8BBB577E1CC91C19003F31F4 /* CornerDetectionFilter.cpp in Sources */,
+				8BBB57961CC91C19003F31F4 /* LaplacianFilter.cpp in Sources */,
+				8BBB578B1CC91C19003F31F4 /* FilterChain.cpp in Sources */,
+				8BBB576C1CC91C19003F31F4 /* AbstractTwoInputCrossTextureSamplingFilter.cpp in Sources */,
+				8BBB577B1CC91C19003F31F4 /* ColorPackingFilter.cpp in Sources */,
+				8BBB57A91CC91C19003F31F4 /* VoronoiFilter.cpp in Sources */,
+				8BBB57801CC91C19003F31F4 /* DarkenBlendFilter.cpp in Sources */,
+				8BBB57921CC91C19003F31F4 /* HarrisCornerDetectionFilter.cpp in Sources */,
+				8BBB57761CC91C19003F31F4 /* CGAColorspaceFilter.cpp in Sources */,
+				8BBB57CB1CC93699003F31F4 /* ofxPanel.cpp in Sources */,
+				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
+				8BBB57971CC91C19003F31F4 /* LookupFilter.cpp in Sources */,
+				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
+				8BBB57811CC91C19003F31F4 /* DilationFilter.cpp in Sources */,
+				8BBB57A31CC91C19003F31F4 /* SmoothToonFilter.cpp in Sources */,
+				8BBB57681CC91C19003F31F4 /* Abstract3x3TextureSamplingFilter.cpp in Sources */,
+				8BBB577C1CC91C19003F31F4 /* ColorReplacementFilter.cpp in Sources */,
+				8BBB57A41CC91C19003F31F4 /* SobelEdgeDetectionFilter.cpp in Sources */,
+				8BBB57C81CC93699003F31F4 /* ofxButton.cpp in Sources */,
+				8BBB57981CC91C19003F31F4 /* LowPassFilter.cpp in Sources */,
+				8BBB57A11CC91C19003F31F4 /* SaturationFilter.cpp in Sources */,
+				8BBB579F1CC91C19003F31F4 /* PoissonBlendFilter.cpp in Sources */,
+				8BBB576E1CC91C19003F31F4 /* AdditiveBlendFilter.cpp in Sources */,
+				8BBB576F1CC91C19003F31F4 /* AlphaBlendFilter.cpp in Sources */,
+				8BBB57911CC91C19003F31F4 /* HalftoneFilter.cpp in Sources */,
+				8BBB579E1CC91C19003F31F4 /* PixelateFilter.cpp in Sources */,
+				8BBB576D1CC91C19003F31F4 /* AbstractTwoInputFilter.cpp in Sources */,
+				8BBB57671CC91C19003F31F4 /* Abstract3x3PingPongFilter.cpp in Sources */,
+				8BBB57861CC91C19003F31F4 /* EdgeTangentFilter.cpp in Sources */,
+				8BBB57721CC91C19003F31F4 /* BilateralFilter.cpp in Sources */,
+				8BBB578E1CC91C19003F31F4 /* GaussianBlurFilter.cpp in Sources */,
+				8BBB577F1CC91C19003F31F4 /* CrosshatchFilter.cpp in Sources */,
+				8BBB57691CC91C19003F31F4 /* AbstractDoGFilter.cpp in Sources */,
+				8BBB57701CC91C19003F31F4 /* AlphaMaskFilter.cpp in Sources */,
+				8BBB579D1CC91C19003F31F4 /* PerlinPixellationFilter.cpp in Sources */,
+				8BBB579A1CC91C19003F31F4 /* MultiplyBlendFilter.cpp in Sources */,
+				8BBB57951CC91C19003F31F4 /* KuwaharaFilter.cpp in Sources */,
+				8BBB57771CC91C19003F31F4 /* ChromaKeyBlendFilter.cpp in Sources */,
+				8BBB577A1CC91C19003F31F4 /* ColorMatrixFilter.cpp in Sources */,
+				8BBB57AA1CC91C19003F31F4 /* XYDerivativeFilter.cpp in Sources */,
+				8BBB57871CC91C19003F31F4 /* EdgeTangentSmoothingFilter.cpp in Sources */,
+				8BBB57851CC91C19003F31F4 /* DoGFilter.cpp in Sources */,
+				8BBB57781CC91C19003F31F4 /* ColorBlendFilter.cpp in Sources */,
+				8BBB578F1CC91C19003F31F4 /* GradientMapFilter.cpp in Sources */,
+				8BBB57901CC91C19003F31F4 /* GrayscaleFilter.cpp in Sources */,
+				8BBB57A21CC91C19003F31F4 /* SketchFilter.cpp in Sources */,
+				8BBB57A01CC91C19003F31F4 /* PosterizeFilter.cpp in Sources */,
+				8BBB578C1CC91C19003F31F4 /* FlowDoGFilter.cpp in Sources */,
+				8BBB57CC1CC93699003F31F4 /* ofxSlider.cpp in Sources */,
+				8BBB57CE1CC93699003F31F4 /* ofxToggle.cpp in Sources */,
+				8BBB57751CC91C19003F31F4 /* BrightnessFilter.cpp in Sources */,
+				8BBB579C1CC91C19003F31F4 /* PerlinNoiseFilter.cpp in Sources */,
+				8BBB57891CC91C19003F31F4 /* ErosionFilter.cpp in Sources */,
+				8BBB57821CC91C19003F31F4 /* DirectionalDoGFilter.cpp in Sources */,
+				8BBB57941CC91C19003F31F4 /* InvertFilter.cpp in Sources */,
+				8BBB57CA1CC93699003F31F4 /* ofxLabel.cpp in Sources */,
+				8BBB57A51CC91C19003F31F4 /* ThresholdedNonMaximumSuppressionFilter.cpp in Sources */,
+				8BBB579B1CC91C19003F31F4 /* NormalBlendFilter.cpp in Sources */,
+				8BBB57C71CC93699003F31F4 /* ofxBaseGui.cpp in Sources */,
+				8BBB576A1CC91C19003F31F4 /* AbstractFilter.cpp in Sources */,
+				8BBB57731CC91C19003F31F4 /* BloomFilter.cpp in Sources */,
+				8BBB57741CC91C19003F31F4 /* BoxBlurFilter.cpp in Sources */,
+				8BBB57AC1CC91C19003F31F4 /* ParametricObject.cpp in Sources */,
+				8BBB57C91CC93699003F31F4 /* ofxGuiGroup.cpp in Sources */,
+				8BBB57AB1CC91C19003F31F4 /* ZoomBlurFilter.cpp in Sources */,
+				8BBB57711CC91C19003F31F4 /* AverageColorFilter.cpp in Sources */,
+				8BBB57CD1CC93699003F31F4 /* ofxSliderGroup.cpp in Sources */,
+				8BBB577D1CC91C19003F31F4 /* ContrastFilter.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4EEB9AC138B136A00A80321 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = openFrameworks;
+			targetProxy = E4EEB9AB138B136A00A80321 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E4B69B4E0A3A1720003C02F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-D__MACOSX_CORE__",
+					"-mtune=native",
+				);
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E4B69B4F0A3A1720003C02F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
+				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-D__MACOSX_CORE__",
+					"-mtune=native",
+				);
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E4B69B600A3A1757003C02F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = NONE;
+				ICON = "$(ICON_NAME_DEBUG)";
+				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
+				INFOPLIST_FILE = "openFrameworks-Info.plist";
+				INSTALL_PATH = /Applications;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)Debug";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E4B69B610A3A1757003C02F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = NONE;
+				ICON = "$(ICON_NAME_RELEASE)";
+				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
+				INFOPLIST_FILE = "openFrameworks-Info.plist";
+				INSTALL_PATH = /Applications;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+				baseConfigurationReference = E4EB6923138AFD0F00A09F29;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "Template" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B69B4E0A3A1720003C02F2 /* Debug */,
+				E4B69B4F0A3A1720003C02F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "Template" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B69B600A3A1757003C02F2 /* Debug */,
+				E4B69B610A3A1757003C02F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4B69B4C0A3A1720003C02F2 /* Project object */;
+}
