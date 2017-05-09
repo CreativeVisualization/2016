@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- uncomment lines below to include extra p5 libraries -->
+<!--  <script language="javascript" src="libraries/p5.js"></script>-->
+  <!--<script language="javascript" src="libraries/p5.dom.js"></script>-->
+<!--  <script language="javascript" src="libraries/p5.svg.js"></script>--><!--<script language="javascript" src="libraries/p5.sound.js"></script>-->
+<!--  <script language="javascript" type="text/javascript" src="sketch.js"></script>-->
+  <link rel="stylesheet" type="text/css" href="css.css">
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+  <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+  <style>
+      #map {
+          width:1440px;
+          height: 1080px;
+      }
+  </style>
+</head>
+
+<body>
+    <div id="side">
+        <h1>都市への流れ</h1>
+        <p>渋谷、新宿、高田馬場、池袋の各駅から、多摩方面の街々へ向けて走る鉄道路線のデータを図にした。円の大きさは乗降客数を、色は発着する電車の本数を示し、位置は所要時間を勘案して決めた。</p>
+        <ul>
+            <a href="ike.html">
+                <li>池袋<br />
+                <class>東上線・西武線</class></li>
+            </a>
+            <li class="this">高田馬場<br />
+            <class>西武線</class></li>
+            <a href="shin.html">
+                <li>新宿<br />
+                <class>中央線・京王線・小田急線</class></li>
+            </a>
+            <a href="shibu.html">
+                <li class="shibu">渋谷<br />
+                <class>田園都市線・東横線</class></li>
+            </a>
+        </ul>
+
+        <a href="../meme/index.html">
+            <h2 id="other"><class>Creative Visualization Work-Shop</class><br />くらべる</h2>
+        </a>
+    </div>
+
+    <div id='map'></div>
+
+    <script>
+
+    	var map = L.map('map', {
+    		crs: L.CRS.Simple,
+    		maxZoom: 2
+    	});
+
+    	var bounds = [[0,0], [4000,3000]];
+    	var image = L.imageOverlay('baba.svg', bounds).addTo(map);
+
+    	map.fitBounds(bounds);
+
+    </script>
+</body>
+</html>

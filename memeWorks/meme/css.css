@@ -1,0 +1,84 @@
+html, body {
+    width: 1920px;
+    height: 1080px;
+    margin: -1px;
+    padding: 0;
+    color: #333;
+    transition: 0.2s;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+#side {
+    position: relative;
+    float: right;
+    width: 440px;
+    height: 1040px;
+    padding: 20px;
+    background: rgba(239, 239, 239, 0.9);
+    z-index: 10;
+}
+h1 {
+    text-align: center;
+}
+p {
+    font-size: 16.9px;
+    line-height: 28px;
+    margin: 20px 0;
+}
+p.ex {
+    font-family: Hiragino Mincho ProN;
+    color: #666;
+    border-top: 1px solid #ccc;
+    padding: 26px;
+}
+p.none {
+    margin: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+    margin: 0;
+    font-size: 19px;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+    transition: 0.4s;
+}
+li.shibu {
+    border-bottom: 1px solid #ccc;
+}
+li:hover {
+    background-color: #fff;
+}
+li class {
+    font-size: 15px;
+}
+li.this,li.this:hover {
+    background-color: #fff;
+}
+h2#other {
+    width: 440px;
+    position: absolute;
+    bottom: 0px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: normal;
+    padding: 20px 0 10px;
+    border-top: 1px solid #ccc;
+    transition: 0.4s;
+}
+h2#other class {
+    font-size: 15px;
+}
+h2#other:hover {
+    background-color: #fff;
+}
+iframe {
+    margin: 0 -2.6px;
+    padding: 0;
+}
